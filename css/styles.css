@@ -19,6 +19,12 @@ img {
     display: block;
 }
 
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 body {
     background-color: #FFFFFF;
     color: #434455;
