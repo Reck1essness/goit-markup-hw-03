@@ -258,7 +258,7 @@ body {
 }
 
 .section-four-list-item {
-    width: calc((100% - 48px) /3);
+    width: calc((100% - 48px) / 3);
 }
 
 .container-four {
