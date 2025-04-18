@@ -1,11 +1,22 @@
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 ul, ol {
-    kist-style: none;
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
 a {
     text-decoration: none;
 }
 
+img {
+    display: block;
+}
 
 body {
     background-color: #FFFFFF;
@@ -21,16 +32,35 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-right: 76px;
 }
 .logo-scnd {
     color: #2e2f42;
 }
+
+.header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.container-header {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
 .header-nav-a {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding: 24px 0;
 }
 .header-nav-a:hover {
     color: #404bbf;
@@ -42,6 +72,11 @@ body {
 
 .header-adrs {
     font-style: normal;
+}
+
+.header-adrs-list {
+    display: flex;
+    gap: 40px;
 }
 
 .header-adrs-list-link {
@@ -61,6 +96,7 @@ body {
 
 .section-one {
     background-color: #2e2f42;
+    padding: 188px 0;
 }
 
 .section-one-title {
@@ -69,6 +105,7 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: #ffffff;
+    max-width: 496px;
 }
 
 .section-one-button {
@@ -80,6 +117,12 @@ body {
     letter-spacing: 0.04em;
     color: #ffffff;
     cursor: pointer;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .section-one-button:hover {
@@ -90,12 +133,36 @@ body {
     background-color:  #404BBF;
 }
 
+.section-two {
+    padding: 120px 0;
+
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.section-two-list {
+    display: flex;
+    gap: 24px;
+}
+
 .section-two-list-item-ltitle {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    width: calc((100%-72px)/4);
 }
 
 .section-two-list-item-p {
@@ -103,10 +170,17 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    margin-bottom: 8px;
 }
 
 .section-three {
     background-color:  #F4F4FD;
+    padding: 120px 0;
+}
+
+.section-three-list {
+    display: flex;
+    gap: 24px;
 }
 
 .section-three-title {
@@ -116,10 +190,17 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
+    margin-bottom: 72px;
+}
+
+.sec-three-worker {
+    padding: 32px 0;
 }
 
 .section-three-list-item {
     background-color:  #FFFFFF;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .section-three-list-item-title {
@@ -128,6 +209,8 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    text-align: center;
+    margin-bottom: 8px;
 }
 
 .section-three-list-item-p {
@@ -135,6 +218,21 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    text-align: center;
+
+}
+
+.section-four {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+}
+
+.section-four-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 
 .section-four-title {
@@ -144,6 +242,17 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
+    margin-bottom: 72px;
+}
+
+.section-four-list-item {
+    width: calc((100% - 48px) / 3);
+}
+
+.container-four {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 .section-four-list-item-ltitle {
@@ -152,6 +261,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .section-four-list-item-p {
@@ -163,6 +273,7 @@ body {
 
 .footer {
     background-color: #2e2f42;
+    padding: 100px;
 }
 
 .footer-link {
@@ -173,10 +284,13 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-link-second {
     color: #f4f4fd;
+    max-width: 264px;
 }
 
 .footer-p {
